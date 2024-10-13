@@ -38,26 +38,29 @@
 .HomePage .zodiacSection img{
     height:600px;
 }
-.HomePage .latestDropSection{
-    margin: 80px 0;
+.HomePage .batSection{
+    padding:80px 0;
 }
-.HomePage .latestDropSection .bat img{
-    height:500px;
-    padding:0;
-    margin:0;
+.HomePage .batSection button{
+    font-size:20px;
+    padding:20px 40px;
+    border-radius:30px;
+}
+.HomePage .batSection a{
+    position: relative;
+    bottom:144px;
+    left:130px;
+}
+.HomePage .batSection .batHoodieBack, .HomePage .batSection .batHoodieFront{
+   width:600px;    
+   padding:0;
+}
+.HomePage .batSection .batHoodieBack{
+    margin-left:180px;
+}
+.HomePage .batSection .batImg{
+position:absolute;
+left:-20px;
+width:550px;
+}
 
-}
-.HomePage .latestDropSection button{
-    background-color:pink;
-    border:4px solid red;
-    padding:20px 60px;
-    border-radius: 33px;
-    font-size:22px;
-}
-.HomePage .latestDrop em{
-   font-size:50px;
-   color:white;
-}
-.HomePage .batHoodie img{
-    height:600px;
-}

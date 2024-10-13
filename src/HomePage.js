@@ -9,7 +9,8 @@ import zodiacFront from "./images/zodiacFront.jpg";
 import zodiacBack from "./images/zodiacBack.jpg";
 import Batty from "./images/Batty.png";
 import batsBack from "./images/batsBack.png";
-import batsFront from "./images/batsFront.png"
+import batsFront from "./images/batsFront.png";
+
 
 
 export default function HomePage(){
@@ -49,24 +50,16 @@ return(
                 </span>
             </div>
         </div>
-        <div className="latestDropSection">
+        <div className="batSection">
             <div className="row">
-                <span className="col-md-6">
-                    <span className="row latestDrop">
-                        <em>latest drop</em>
-                    </span>
-                    <span className="row bat">
-                        <img src={Batty} alt="pink bat" />
-                    </span>
-                    <span className="shopButton ">
-                        <a href="/"><button>Shop</button></a>
-                    </span>
+                <span className="col-6">
+                    <img src={Batty} alt="pink bat" className="batImg img-fluid"/>
+                    <a href="/"><button>Shop</button></a>
                 </span>
-                <span className="col-md-6 batHoodie">
-                    <img src={batsBack} alt="ghost in a livingroom" />
-                    <img src={batsFront} alt="ghost in a livingroom" />
-                </span>
-            </div>        
+                    <img src={batsBack} alt="hoodie with bats on it" className="batHoodieBack img-fluid row"/>
+                    <img src={batsFront} alt="hoodie with bats on it" className="batHoodieFront img-fluid row"/>
+
+            </div>
         </div>
     </div>
     </div>
