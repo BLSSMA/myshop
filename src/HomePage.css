@@ -1,28 +1,55 @@
+:root{
+    --dark-blue:#85a8d2;
+    --light-blue:#aaa8c9;
+    --purple:#cb8cbe;
+    --pink:#fac8cd;
+    --dark-pink:#e28fbd;
+    --orange:#efab94;
+}
+.HomePage{
+    background-color:#f8e4e6;
+    padding-bottom: 120px;
+}
+.HomePage .openerSection{
+    background-color: var(--pink);
+    padding:80px 0;
 
-
-.HomePage.openerSection{
-    display:block;
-    width:800px;
-    display:flex;
 }
 .HomePage .halloween{
     height:222px;
+    border-radius:60px;
+    opacity:0.7;
+}
+.HomePage .livingroomSection{
+    background: rgb(226, 143, 189);
+        background: linear-gradient(0deg, rgba(226, 143, 189, 1) 7%, rgba(239, 171, 148, 1) 57%, rgba(250, 200, 205, 1) 93%);
 }
 .HomePage .LivingRoomHoodie{
-    padding:80px 60px 80px 0;
+    margin:80px 60px 80px 0;
     width:800px;
+    border:20px solid var(--light-blue);
+    border-radius: 10px;
+    padding:20px;
+    background-color: white;
 }
 .HomePage .LivingRoomGhost{
-    padding:0 0 333px 40px;
+    margin:0 0 333px 40px;
     width:600px;
+    border-radius: 8px;
+    padding:10px;
+    border:10px solid var(--purple);
+    background-color: white;
 }
 .HomePage .livingroomSection span{
     column-gap: 100px;
-
 }
 .HomePage .totesSection{
-    margin:80px 0;
-}
+    padding:80px 0;
+    margin:120px;
+    border-radius: 120px;
+    background: rgb(183, 201, 223);
+    background: radial-gradient(circle, rgba(183, 201, 223, 1) 0%, rgba(133, 168, 210, 1) 22%, rgba(170, 168, 201, 1) 40%, rgba(203, 140, 190, 1) 65%, rgba(226, 143, 189, 1) 93%);
+    }
 .HomePage .toteFront, .HomePage .toteBack{
     height:600px;
     border-radius:33px;
@@ -30,26 +57,45 @@
 .HomePage .toteFront{
     margin-right:333px;
     margin-bottom:-80px;
-    border:10px double pink;
+    background-color:white;
+    border:40px double var(--dark-pink);
 }
 .HomePage .toteBack{
     margin-left:333px;
+    border: 40px double var(--dark-blue);
+    background-color: white;
 }
+.HomePage .zodiacSection{
+    padding:80px 0; 
+    background: rgb(239, 171, 148);
+    background: linear-gradient(0deg, rgba(239, 171, 148, 1) 0%, rgba(250, 200, 205, 1) 63%, rgba(248, 228, 230, 1) 99%);}
 .HomePage .zodiacSection img{
     height:600px;
 }
 .HomePage .batSection{
-    padding:80px 0;
+    padding:80px 0 60px 0;
+    border:10px solid #e28fbd72;
+    margin:90px 90px 0 90px;
+    border-radius:10px;
 }
 .HomePage .batSection button{
-    font-size:20px;
+    font-size:24px;
     padding:20px 40px;
-    border-radius:30px;
+    border-radius:40px;
+    background-color:#bebde4;
+    border:5px solid #827fe4;
+    font-weight: 700;
+    margin-left:-20px;
+}
+.HomePage .batSection button:hover{
+    background-color: #827fe4;
+    border-color:#bebde4;
+    color:white;
 }
 .HomePage .batSection a{
     position: relative;
     bottom:144px;
-    left:130px;
+    left:80px;
 }
 .HomePage .batSection .batHoodieBack, .HomePage .batSection .batHoodieFront{
    width:600px;    
@@ -60,7 +106,7 @@
 }
 .HomePage .batSection .batImg{
 position:absolute;
-left:-20px;
-width:550px;
+left:30px;
+width:600px;
 }
 

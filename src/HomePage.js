@@ -58,7 +58,6 @@ return(
                 </span>
                     <img src={batsBack} alt="hoodie with bats on it" className="batHoodieBack img-fluid row"/>
                     <img src={batsFront} alt="hoodie with bats on it" className="batHoodieFront img-fluid row"/>
-
             </div>
         </div>
     </div>
