@@ -10,6 +10,11 @@
     background-color:#f8e4e6;
     padding-bottom: 120px;
 }
+.container, .grid{
+    margin:0;
+    padding:0;
+    width:100%;
+}
 .HomePage .openerSection{
     background-color: var(--pink);
     padding:80px 0;

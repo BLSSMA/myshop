@@ -12,7 +12,6 @@ import batsBack from "./images/batsBack.png";
 import batsFront from "./images/batsFront.png";
 
 
-
 export default function HomePage(){
 
 return(
