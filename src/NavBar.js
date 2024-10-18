@@ -2,14 +2,15 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 import logo from "./images/logo.png";
-import { CiMenuBurger } from "react-icons/ci";
+import NavbarHamburger from "./NavbarHamburger";
 
 
 const Navbar = () => {
  return (
-   <header className="Navbar">
+   <header className="Navbar d-sm-md-none">
      <nav className="nav ">
          <ul className="nav__list">
+          <li><NavbarHamburger /></li>
           <li>
        <NavLink to="/" className="nav__logo">
         <img src={logo} alt="logo"/>
@@ -28,9 +29,8 @@ const Navbar = () => {
                Shop
              </NavLink>
            </li>
-           <li><CiMenuBurger /></li>
        </span>
-         </ul>    
+        </ul>  
      </nav>
    </header>
 );}

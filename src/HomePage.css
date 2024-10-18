@@ -6,9 +6,16 @@
     --dark-pink:#e28fbd;
     --orange:#efab94;
 }
+.HomePage .grid .container{
+    margin:0 auto;
+    width:100%;
+    padding:0;
+}
 .HomePage{
     background-color:#f8e4e6;
     padding-bottom: 120px;
+    margin:0;
+    width:100%;
 }
 .container, .grid{
     margin:0;
@@ -28,6 +35,8 @@
 .HomePage .livingroomSection{
     background: rgb(226, 143, 189);
         background: linear-gradient(0deg, rgba(226, 143, 189, 1) 7%, rgba(239, 171, 148, 1) 57%, rgba(250, 200, 205, 1) 93%);
+        padding:40px;
+        margin:0;
 }
 .HomePage .LivingRoomHoodie{
     margin:80px 60px 80px 0;
@@ -38,8 +47,9 @@
     background-color: white;
 }
 .HomePage .LivingRoomGhost{
-    margin:0 0 333px 40px;
+    margin:222px 0 0 30px;
     width:600px;
+    vertical-align: middle;
     border-radius: 8px;
     padding:10px;
     border:10px solid var(--purple);
@@ -57,7 +67,11 @@
     }
 .HomePage .toteFront, .HomePage .toteBack{
     height:600px;
+    width:fit-content;
     border-radius:33px;
+}
+.totesImages{
+    padding-left:222px;
 }
 .HomePage .toteFront{
     margin-right:333px;
@@ -80,8 +94,9 @@
 .HomePage .batSection{
     padding:80px 0 60px 0;
     border:10px solid #e28fbd72;
-    margin:90px 90px 0 90px;
+    margin:40px auto;
     border-radius:10px;
+    width:100%;
 }
 .HomePage .batSection button{
     font-size:24px;
@@ -90,18 +105,14 @@
     background-color:#bebde4;
     border:5px solid #827fe4;
     font-weight: 700;
-    margin-left:-20px;
+    margin-left:100px;
 }
 .HomePage .batSection button:hover{
     background-color: #827fe4;
     border-color:#bebde4;
     color:white;
 }
-.HomePage .batSection a{
-    position: relative;
-    bottom:144px;
-    left:80px;
-}
+
 .HomePage .batSection .batHoodieBack, .HomePage .batSection .batHoodieFront{
    width:600px;    
    padding:0;
@@ -112,6 +123,108 @@
 .HomePage .batSection .batImg{
 position:absolute;
 left:30px;
-width:600px;
+width:500px;
 }
+.HomePage .batSection .batHoodieGroup{
+margin: 0 auto;
+}
+
+@media (width<1020px) {
+    .HomePage {
+        padding-bottom: 60px;
+        margin:0;
+        width:100%;
+    }
+    .HomePage .row .col-md-6{
+        margin:0;
+        width:100%;
+    }
+    .HomePage .container-fluid{
+        padding:0;
+        margin:0;
+        width:100%;
+    }
+    .HomePage .openerSection {
+        padding: 20px 0 20px 0;
+        margin:0;
+    }
+    .openerSection .row{
+        margin:0;
+        padding:0;
+    }
+    .HomePage .halloween {
+        height: 80px;
+        padding:0;
+    }
+    .HomePage .livingroomSection{
+        padding:10px 0 40px 0;
+    }
+    .livingroomSection .row{
+        margin:0;
+        padding:0;
+    }
+    .HomePage .LivingRoomHoodie {
+        margin: 0 auto;
+        width: 333px;
+        border: 10px solid var(--light-blue);
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .HomePage .LivingRoomGhost {
+        margin: 40px 0 auto;
+        width: 300px;
+        padding: 10px;
+        }
+
+    .HomePage .totesSection {
+        padding:40px 0;
+        margin:40px 10px;
+    }
+    .HomePage .toteFront,
+    .HomePage .toteBack {
+        height:200px;
+    }
+    .HomePage .toteFront {
+        margin:0 0 0 -280px;
+        border: 20px double var(--dark-pink);
+    }
+    .HomePage .toteBack {
+        margin: 0 0 0 -140px;        
+        border: 20px double var(--dark-blue);
+    }
+    .HomePage .zodiacSection {
+        padding: 40px 0;
+        margin:0;
+    }
+    .zodiacSection .row{
+        margin:0;
+        padding:0;
+    }
+    .HomePage .zodiacSection img {
+        height: 300px;
+    }
+    .HomePage .batSection {
+        margin:10px auto;
+    }
+    .HomePage .batSection button {
+            font-size: 18px;
+            padding: 10px 20px;
+            display:flex;
+            margin:-70px 0 40px 150px;
+            
+    }
+    .HomePage .batSection a{
+        text-decoration: none;
+    }
+
+    .HomePage .batSection .batHoodieBack,
+    .HomePage .batSection .batHoodieFront {
+        width: 250px;
+        display: block;
+        margin: 0 auto;
+    }
+    .HomePage .batSection .batImg {
+        display: none;
+    } 
+    }
 

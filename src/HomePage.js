@@ -17,7 +17,7 @@ export default function HomePage(){
 return(
 <div className="HomePage">
     <div className="grid">
-    <div className="container">
+    <div className="container-fluid">
         <div className="openerSection">
             <div className="row">
                 <div className="col-md-12">
@@ -27,17 +27,19 @@ return(
          </div>
          <div className="livingroomSection">  
             <div className="row">
-                <span className="col-md-6">
-                    <img src={livingroomhoodie} alt="black hoodie with print on front" className="LivingRoomHoodie"/>
-                </span>
-                <span className="col-md-6 livingroomdrawing">
-                    <img src={livingroom} alt="ghost in a livingroom" className="LivingRoomGhost"/>
-                </span>
+                <div className="col-md-6">
+                    <img src={livingroomhoodie} alt="black hoodie with print on front" className="LivingRoomHoodie m-0 "/>
+                </div>
+                <div className="col-md-6 livingroomdrawing">
+                    <img src={livingroom} alt="ghost in a livingroom" className="LivingRoomGhost img-fluid"/>
+                </div>
             </div>   
         </div>
         <div className="totesSection">
-            <div className="row"><img src={totefront} alt="ghost in a livingroom" className="toteFront"/></div>
-            <div className="row"><img src={toteback} alt="ghost in a livingroom" className="toteBack"/></div>    
+            <div className="totesImages">
+            <div ><img src={totefront} alt="ghost in a livingroom" className="toteFront"/></div>
+            <div ><img src={toteback} alt="ghost in a livingroom" className="toteBack"/></div>    
+            </div>
         </div>
         <div className="zodiacSection">
             <div className="row">
@@ -50,13 +52,17 @@ return(
             </div>
         </div>
         <div className="batSection">
-            <div className="row">
-                <span className="col-6">
+            <div className="">
+                <span className="pinkBat">
                     <img src={Batty} alt="pink bat" className="batImg img-fluid"/>
+                </span>
+                <span className="batSectionShopButton">
                     <a href="/"><button>Shop</button></a>
                 </span>
-                    <img src={batsBack} alt="hoodie with bats on it" className="batHoodieBack img-fluid row"/>
-                    <img src={batsFront} alt="hoodie with bats on it" className="batHoodieFront img-fluid row"/>
+                <span className="batHoodieGroup">
+                    <img src={batsBack} alt="hoodie with bats on it" className="batHoodieBack img-fluid rounded"/>
+                    <img src={batsFront} alt="hoodie with bats on it" className="batHoodieFront img-fluid rounded"/>
+                </span>
             </div>
         </div>
     </div>

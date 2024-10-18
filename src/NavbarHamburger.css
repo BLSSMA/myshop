@@ -1,0 +1,25 @@
+.NavbarHamburger{
+    margin:0 auto;
+    padding:0;
+}
+button.Toggle.navbar-toggler{
+    padding:5px;
+    margin:0;
+    text-align: end;
+    font-size:12px;
+}
+
+.NavbarHamburger img{
+    width:50px;
+    margin-left:20px;
+}
+Nav .NavDropdown{
+    font-size:12px;
+    margin:0 auto;
+    text-align: end;
+    padding:0;
+}
+
+
+
+

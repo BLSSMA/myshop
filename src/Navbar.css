@@ -1,3 +1,6 @@
+header{
+    margin:0;
+}
 header nav a{
     text-decoration: none;
 }
@@ -15,10 +18,41 @@ header nav li{
 }
 header img{
     width:80px;
+    display:inline-block;
     padding:0;
     margin:0;
 }
+@media (width<1020px){
+    Navbar{
+        display:inline-flex;
+        padding:0;
+        margin:0;
+    }
+    header{
+        padding:0;
+        margin:0;
+    }
+    .nav__list .nav__item{
+        display:none;
+        padding:0;
+        margin:0;
+    }
+    .nav__list li{
+        padding:0;
+    }
+    .nav__list{
+        padding:0;
+        margin:0;
+    }
+    .nav__list .nav__logo{
+        display:none;
+        padding:0;
+        margin:0;
 
+    }
+}
 @media (width>1020px) {
-    
+    .MenuBurger{
+        display:none;
+    }
 }
